@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>c-date</title>
+
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta name="description" content="ChatApp talk to girls on your mobile phone">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, height=device-height, initial-scale=1.0,
+	 maximum-scale=1.0, target-densityDpi=device-dpi" />
+
+	<!-- css -->
+	<link href="css/style.css" rel="stylesheet" />
+	<!-- end css -->
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<!-- end font -->
+
+	<!-- js -->
+	<script type="text/javascript">
+
+		if (navigator.userAgent.indexOf("UCBrowser") > -1) {
+			viewport = document.querySelector("meta[name=viewport]");
+			viewport.setAttribute('content', 'width=.320px, initial-scale=1.0, maximum-scale=1.0, user-scalable=0');
+		}
+
+		var geoip = {};
+		geoip.country = 'FI';
+		geoip.city = 'Nizhniy Novgorod';
+		geoip.latitude = '56.3287';
+		geoip.longitude = '44.002';
+		geoip.ip = '82.208.99.44';window.site1 = 'c-date'; window.outfile = '#';
+		if (geoip.country == 'UK') {
+		    geoip.country = 'GB';
+		}
+	</script>
+	<script src="js/all.js"></script>
+	<!-- end js -->
+
+</head>
+<body>
+
+<div class="container">
+
+	<header class="header">
+
+		<p class="name">Hello</p>
+
+		<div class="header__container">
+			<img src="assets/pictures/svg/arrow.svg" class="arrow" />
+			<img src="assets/pictures/svg/house.svg" class="header-icon house" />
+			<img src="assets/pictures/svg/arrow.svg" class="header-icon" />
+		</div>
+
+	</header>
+
+	<div class="text">Today</div>
+
+	<div id="messages">
+
+		<article class="my-cloud cloud">
+			<div class="cloud-wrapper">
+				<span class="my-cloud-time"></span>
+				<p class="my-cloud-text">Test 2</p>
+			</div>
+		</article>
+		
+	</div>
+
+	<footer class="footer">
+		<div class="field-wrapper">
+			<input type="text" id="field" name="text" class="field-text" />
+			<label for="field" class="fieal-label">
+				<img src="assets/pictures/svg/smile.svg" class="field-icon" />
+			</label>
+		</div>
+		<a onclick="addComment(this)" class="filed-link">
+			<img src="assets/pictures/svg/send.svg" class="field-btn" />
+		</a>
+	</footer>
+
+</div>
+
+
+<script src="js/all.js"></script>
+
+</body>
+</html>
