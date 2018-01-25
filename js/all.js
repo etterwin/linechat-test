@@ -5,6 +5,10 @@ if (minute < 10) {
     minute = '0'+ minute;
 }
 
+function scrollDown() {
+    window.scrollTo(0, document.body.scrollHeight);
+}
+
 //companion's phrases
 function dialog() {
 
@@ -58,24 +62,31 @@ function dialog() {
             setTimeout(function () {
                 article_2.innerHTML = array[2];
                 container.appendChild(article_2);
+                scrollDown();
                 setTimeout(function () {
                     article_3.innerHTML = array[3];
                     container.appendChild(article_3);
+                    scrollDown();
                     setTimeout(function () {
                         article_4.innerHTML = array[4];
                         container.appendChild(article_4);
+                        scrollDown();
                         setTimeout(function () {
                             article_5.innerHTML = array[5];
                             container.appendChild(article_5);
+                            scrollDown();
                             setTimeout(function () {
                                 article_6.innerHTML = array[6];
                                 container.appendChild(article_6);
+                                scrollDown();
                                 setTimeout(function () {
                                     article_7.innerHTML = array[7];
                                     container.appendChild(article_7);
+                                    scrollDown();
                                     setTimeout(function () {
                                         article_8.innerHTML = array[8];
                                         container.appendChild(article_8);
+                                        scrollDown();
                                     },2800)
                                 },5700)
                             },5000)
@@ -107,9 +118,19 @@ function addComment() {
             '<p class="my-cloud-text">'+phrase+'</p>\n' + '</div>';
         container.appendChild(article);
         document.getElementById('field').value = '';
+        scrollDown();
     }
     else {
         return false;
     }
 }
+
+document.onkeyup = function (e) {
+    e = e || window.event;
+    if (e.keyCode === 13) {
+        addComment();
+    }
+    return false;
+};
+
 
