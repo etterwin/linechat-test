@@ -2,13 +2,15 @@
 <html>
 <head>
 
-	<title>c-date</title>
+	<title>LineChat</title>
 
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<meta name="description" content="ChatApp talk to girls on your mobile phone">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, height=device-height, initial-scale=1.0,
 	 maximum-scale=1.0, target-densityDpi=device-dpi" />
+
+	<link rel="shortcut icon" href="assets/pictures/png/icon.png" type="image/png" />
 
 	<!-- css -->
 	<link href="css/style.css" rel="stylesheet" />
@@ -42,31 +44,26 @@
 </head>
 <body>
 
+<div class="overlay">
+	<div class="bg"></div>
+</div>
+
 <div class="container">
 
 	<header class="header">
-
-		<p class="name">Hello</p>
-
-		<div class="header__container">
-			<img src="assets/pictures/svg/arrow.svg" class="arrow" />
-			<img src="assets/pictures/svg/house.svg" class="header-icon house" />
-			<img src="assets/pictures/svg/arrow.svg" class="header-icon" />
-		</div>
-
+		<p class="name">愛菜</p> <!-- name -->
 	</header>
 
-	<div class="text">Today</div>
+	<div class="header__container">
+		<img src="assets/pictures/svg/arrow.svg" class="arrow" />
+		<img src="assets/pictures/svg/house.svg" class="header-icon house" />
+		<img src="assets/pictures/svg/arrow.svg" class="header-icon" />
+	</div>
 
 	<div id="messages">
-
-		<article class="my-cloud cloud">
-			<div class="cloud-wrapper">
-				<span class="my-cloud-time"></span>
-				<p class="my-cloud-text">Test 2</p>
-			</div>
-		</article>
-		
+		<div class="text__container">
+			<p class="text">今日</p> <!-- today -->
+		</div>
 	</div>
 
 	<footer class="footer">
@@ -82,9 +79,6 @@
 	</footer>
 
 </div>
-
-
-<script src="js/all.js"></script>
 
 </body>
 </html>

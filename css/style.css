@@ -8,9 +8,29 @@
 html,
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: white;
     color: #2e3640;
+}
+
+img {
+    cursor: pointer;
+}
+
+.overlay {
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+}
+
+.bg {
+    background: url('../assets/pictures/jpg/1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    max-width: 700px;
+    width:100%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 .container {
@@ -18,18 +38,19 @@ body {
     width:100%;
     height: 100vh;
     margin: 0 auto;
-    background: url('../assets/pictures/jpg/1.jpg') no-repeat 50% 50%;
-    background-size: cover;
     position: relative;
 }
 
 .header {
+    max-width: 700px;
     height: 70px;
+    width: 100%;
     background: #464e65;
     color: #FFF;
     display: flex;
-    position: relative;
+    position: fixed;
     text-align: center;
+    z-index: 10;
 }
 
 .name {
@@ -42,14 +63,16 @@ body {
 
 .header__container {
     width: 100%;
+    max-width: 700px;
     height: 70px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    z-index: 10;
     display: flex;
     flex-direction: row;
+}
+
+.header__container img:hover {
+    opacity: 0.8;
 }
 
 .arrow {
@@ -75,10 +98,14 @@ body {
     width: 40px;
 }
 
+.text__container {
+    text-align: center;
+}
+
 .text {
     margin: 10px auto;
     color: white;
-    width: 65px;
+    display: inline-block;
     padding: 5px 10px;
     background: rgba(46,54,64,0.4);
     border-radius: 50px;
@@ -133,6 +160,28 @@ body {
     width: 40px;
 }
 
+#messages {
+    margin: 0 0 60px;
+    padding-top: 70px;
+}
+
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: url("../assets/pictures/png/ava.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.girl {
+    margin-left: 15px;
+    max-height: 220px;
+    max-width: 220px;
+    overflow: hidden;
+}
+
 .cloud {
     margin: 10px;
     min-height: 30px;
@@ -146,6 +195,7 @@ body {
     display: inline-block;
     white-space: pre-wrap;
     max-width: 60%;
+    margin-left: 15px;
 }
 
 .cloud-text:before {
@@ -168,10 +218,13 @@ body {
     margin-left: 5px;
 }
 
-
-
 .cloud-wrapper {
     text-align: right;
+}
+
+.my-cloud {
+    margin: 10px;
+    min-height: 30px;
 }
 
 .my-cloud-text {
@@ -202,4 +255,52 @@ body {
     font-size: 14px;
     margin-right: 5px;
     vertical-align: bottom;
+}
+
+article.cloud:nth-child(even) {
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+
+    .name {
+        font-size: 28px;
+    }
+
+    .arrow {
+        display: block;
+        transform: rotate(90deg);
+        width: 25px;
+        height: 20px;
+        margin: auto auto auto 10px;
+    }
+
+    .header-icon {
+        display: block;
+        height: 25px;
+    }
+
+    .header-icon.house {
+        margin: auto 15px auto auto;
+        width: auto;
+    }
+
+    .header-icon:last-child {
+        margin: auto 10px auto 0;
+        width: 30px;
+    }
+
+    .field-wrapper {
+        width: 80%;
+    }
+
+    .field-text {
+        width: 85%;
+    }
+
+    .avatar {
+        display: block;
+        margin-bottom: 5px;
+    }
+
 }
