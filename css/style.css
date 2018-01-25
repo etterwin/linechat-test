@@ -11,6 +11,12 @@ body {
     height: 100%;
     background: white;
     color: #2e3640;
+    word-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: #0095ff;
 }
 
 img {

@@ -17,12 +17,11 @@ function dialog() {
 
     var array = ['<div class="avatar"></div>'+'<p class="cloud-text">私のおっぱい好き？</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<img src="assets/pictures/png/girl.png" class="girl" />' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
-        '<div class="avatar"></div>'+'<p class="cloud-text">トロント付近に住んでいるなら、ぜひ会いに来て！</p>' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
-        '<div class="avatar"></div>'+'<p class="cloud-text"><a href="http://adbomb.pro/click.php?lp=1">私のプロフィールを見てみて</a></p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
+        '<div class="avatar"></div>'+'<p class="cloud-text">私のプロフィールを見てみて<a href="http://adbomb.pro/click.php?lp=1">http://www.c-date.com/japan/yuna</a></p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<p class="cloud-text">連絡先を登録して、お近づきになりましょう</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<p class="cloud-text">アナルプレーもできるわ。どうやって私をイカせてくれるのか教えて？</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<p class="cloud-text">私の身体の上で、男性が満足するのを見るのが本当に好きなの…</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
-        '<div class="avatar"></div>'+'<p class="cloud-text">セックスしたくてたまらない。写真を撮って <a href="http://adbomb.pro/click.php?lp=1">に載せるから見てみて！</a></p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
+        '<div class="avatar"></div>'+'<p class="cloud-text">セックスしたくてたまらない。写真を撮って に載せるから見てみて <a href="http://adbomb.pro/click.php?lp=1">c-date</a>!</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<p class="cloud-text">すぐまたあとでチャットしましょうxx</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n'];
 
 
@@ -49,9 +48,6 @@ function dialog() {
 
     var article_7 = document.createElement('article');
     article_7.className = "cloud";
-
-    var article_8 = document.createElement('article');
-    article_8.className = "cloud";
 
     setTimeout(function () {
         article_0.innerHTML = array[0];
@@ -83,11 +79,6 @@ function dialog() {
                                     article_7.innerHTML = array[7];
                                     container.appendChild(article_7);
                                     scrollDown();
-                                    setTimeout(function () {
-                                        article_8.innerHTML = array[8];
-                                        container.appendChild(article_8);
-                                        scrollDown();
-                                    },2800)
                                 },5700)
                             },5000)
                         },5400)
