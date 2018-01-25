@@ -125,6 +125,7 @@ function addComment() {
     }
 }
 
+//if press 'enter'
 document.onkeyup = function (e) {
     e = e || window.event;
     if (e.keyCode === 13) {
