@@ -5,6 +5,7 @@ if (minute < 10) {
     minute = '0'+ minute;
 }
 
+//scroll down 
 function scrollDown() {
     window.scrollTo(0, document.body.scrollHeight);
 }
@@ -12,7 +13,7 @@ function scrollDown() {
 //companion's phrases
 function dialog() {
 
-    //take parent's container
+    //get parent's container
     var container = document.getElementById('messages');
 
     var array = ['<div class="avatar"></div>'+'<p class="cloud-text">私のおっぱい好き？</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
@@ -24,7 +25,7 @@ function dialog() {
         '<div class="avatar"></div>'+'<p class="cloud-text">セックスしたくてたまらない。写真を撮って に載せるから見てみて <a href="http://adbomb.pro/click.php?lp=1">c-date</a>!</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n',
         '<div class="avatar"></div>'+'<p class="cloud-text">すぐまたあとでチャットしましょうxx</p>\n' + '<span class="cloud-time">'+date.getHours()+':'+minute+'</span>\n'];
 
-
+    //create DOM element for every messages
     var article_0 = document.createElement('article');
     article_0.className = "cloud";
 
@@ -49,6 +50,7 @@ function dialog() {
     var article_7 = document.createElement('article');
     article_7.className = "cloud";
 
+    //add messages
     setTimeout(function () {
         article_0.innerHTML = array[0];
         container.appendChild(article_0);
@@ -96,15 +98,16 @@ setTimeout(dialog, 1000);
 //add user comment
 function addComment() {
 
-    //take parent's container
+    //get parent's container
     var container = document.getElementById('messages');
 
+    //create DOM element
     var article = document.createElement('article');
     article.className = "my-cloud";
 
+    //get field's value or user's message
     var phrase = document.getElementById('field').value;
     if (phrase.length > 0) {
-
         article.innerHTML = '<div class="cloud-wrapper">\n' + '<span class="my-cloud-time">'+date.getHours()+':'+minute+'</span>\n' +
             '<p class="my-cloud-text">'+phrase+'</p>\n' + '</div>';
         container.appendChild(article);
